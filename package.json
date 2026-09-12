@@ -1,6 +1,6 @@
 {
-  "name": "re-walkthrough-pro",
-  "version": "0.1.0",
+  "name": "project",
+  "version": "1.0.0",
   "description": "Claude Code skill that turns a Zillow listing into a cinematic, room-by-room property walkthrough video — Apify scrapes the photos, Higgsfield animates each room, ffmpeg stitches the final cut. Built to sell to real estate agents.",
   "keywords": [
     "claude-code",
@@ -42,6 +42,6 @@
     "node": ">=14"
   },
   "scripts": {
-    "test": "node bin/re-walkthrough-pro.js --version && echo 'OK'"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   }
 }
